@@ -4,6 +4,6 @@ from .views import sayHi
 
 urlpatterns = [
     path('', homePageView, name='home'),
-    path('hi', sayHi, name='hai'),
+    path('hi', sayHi, name='hi'),
 
 ]
