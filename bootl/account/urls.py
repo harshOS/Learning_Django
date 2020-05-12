@@ -5,5 +5,6 @@ urlpatterns =[
     path('', HomePage, name = 'home'),
     path('dashboard', HomePage, name = 'dashboard'),
     path('products', Products, name = 'Products'),
+    path()
 
 ]
