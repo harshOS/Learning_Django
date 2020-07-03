@@ -46,14 +46,14 @@
             background-color:rgb(0, 0, 0);
 
         }
-        .banner {
+        #banner {
             font-family: 'Sofia';
             font-weight: bold;
             padding-left: 50px;
             text-align: center;
   
         }
-        .about {
+        #about {
             padding-top:150px;
 
         }
@@ -61,40 +61,26 @@
     </style>
 </head>
 <body style="background-color:beige">
+    <a name="home"></a>
     <ul>
-        <li><a href="#banner">Home</a></li>
+        <li><a href="#top">Home</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="#portfolio">portfolio</a></li>
         <li style="float:right"><a href="#contact">contact</a></li>
     </ul>
 
-    <div class="banner" >
+    <div id="banner" >
     <a style="float: right;;"><img src="banner.png" alt="hngimage" width="500x" height="500px"></img></a>
 
     <p style="font-size: 40px;;">I'm Harshithkumar NG</p>
     <p style="font-size: 25px; color:rgb(54, 53, 53)">Nunc pellentesque urna et felis viverra, id rutrum eros consectetur. Phasellus volutpat ligula felis. Vivamus imperdiet neque arcu, nec tincidunt velit condimentum tempor. Aenean tempus consectetur pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et suscipit augue, nec molestie risus. Sed neque dolor, euismod non hendrerit a, rutrum sit amet orci. </p>
     </div>  
-    <div class="about">
+    <div id="about">
         <h1>About</h1>
         <p>
             Nunc pellentesque urna et felis viverra, id rutrum eros consectetur. Phasellus volutpat ligula felis. Vivamus imperdiet neque arcu, nec tincidunt velit condimentum tempor. Aenean tempus consectetur pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et suscipit augue, nec molestie risus. Sed neque dolor, euismod non hendrerit a, rutrum sit amet orci. Fusce mattis imperdiet velit. Morbi tincidunt neque nec metus dapibus tempor. Ut eget sodales urna, eu sollicitudin eros. Pellentesque tincidunt tortor quis volutpat tincidunt. Pellentesque ac est interdum, tempor erat vitae, hendrerit nisi. Fusce lacus nulla, venenatis id purus quis, congue imperdiet metus.
         </p>
     </div>
-    <script>
-        $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-      </script>
+
 </body>
 </html>
