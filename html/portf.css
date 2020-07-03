@@ -1,0 +1,65 @@
+
+body{
+    text-align: justify;
+    font-size:20px ;
+
+}
+ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgb(103, 146, 240);
+    
+}
+li {
+    font-family: 'Sofia';
+    float: left;
+    font-size: 30px;
+    border-right:1px solid rgb(109, 29, 29);
+
+    }
+li:last-child {
+    border-right: none;
+}
+
+
+li a {
+    color:black ;
+    display: block;
+    padding:8px 12px ;
+    text-decoration: none;
+
+}
+li a:hover {
+    color: blanchedalmond;
+    background-color:rgb(0, 0, 0);
+
+}
+.column {
+    float: right;
+    width: 50%;
+    font-family: Sofia;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width:600px) {
+    .column {
+    width: 100%;
+    }
+}
+#about {
+    
+
+}
