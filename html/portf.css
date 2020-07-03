@@ -60,6 +60,20 @@ li a:hover {
     }
 }
 #about {
-    
+    padding-top: 10px;
+    padding-left:20px ;
+    line-height: 2;
 
+}
+#portfolio,#contact{
+    padding-left:20px ;
+    line-height:2 ;
+a {
+    text-decoration: None;
+}
+}
+.footer1{
+    background-color: darkcyan;
+    padding-left:20px ;
+    font-size: 40px;
 }
