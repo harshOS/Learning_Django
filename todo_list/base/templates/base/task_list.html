@@ -1,12 +1,15 @@
 <h1>My to do list</h1>
+<a href="{% url 'task-create' %}">Create Task</a>
 <table>
     <tr>
         <th>Title</th>
+        <th></th>
     </tr>
     {% for task in tasks %}
     <tr>
         <td>{{task.title}}</td>
-    </tr>
+        <td><a href="{% url 'task' task.id %}">View</a></td>
+    </tr>   
     {% empty %}
     <h3>Task list is Empty</h3>
     {% endfor %}
