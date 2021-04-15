@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block content %}
+
+{%for blog in all_blogs %}
+<div class="post_entry">
+    <div class="panel panel-info">
+    <div class="panel-heading"><h2> <a href = "{% url 'post_detail' blog.pk %}">{{blog.title}}</a></h2></div>
+
+    <div class="panel-body"><p>{{blog.body}}</p></div>
+</div>
+</div>
+
+{% endfor %}
+{% endblock content %}
